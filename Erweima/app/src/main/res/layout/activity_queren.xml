@@ -9,9 +9,10 @@
     <Button
         android:id="@+id/queren"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="确认"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonshape"/>
 </RelativeLayout>
