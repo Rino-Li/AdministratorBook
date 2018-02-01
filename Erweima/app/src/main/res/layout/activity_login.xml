@@ -59,8 +59,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@null"
                 android:hint="请输入手机号"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/standardwhite"
+                android:textColorHint="@color/standardwhite"
                 android:textCursorDrawable="@drawable/color_cursor"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -71,7 +71,7 @@
             android:layout_alignLeft="@+id/layout_account"
             android:layout_alignRight="@+id/layout_pwd"
             android:layout_below="@+id/layout_account"
-            android:background="@color/white" />
+            android:background="@color/standardwhite" />
 
         <LinearLayout
             android:id="@+id/layout_pwd"
@@ -108,8 +108,8 @@
                 android:background="@null"
                 android:hint="请输入密码"
                 android:password="true"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/standardwhite"
+                android:textColorHint="@color/standardwhite"
                 android:textCursorDrawable="@drawable/color_cursor"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -120,7 +120,7 @@
             android:layout_alignLeft="@+id/layout_account"
             android:layout_alignRight="@+id/layout_pwd"
             android:layout_below="@+id/layout_pwd"
-            android:background="@color/white" />
+            android:background="@color/standardwhite" />
 
 
 
@@ -138,7 +138,7 @@
             android:elevation="1dip"
             android:gravity="center"
             android:text="登录"
-            android:textColor="@color/white" />
+            android:textColor="@color/standardwhite" />
 
 
 

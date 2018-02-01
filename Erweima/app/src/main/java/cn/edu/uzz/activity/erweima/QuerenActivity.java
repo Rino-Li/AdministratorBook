@@ -54,12 +54,11 @@ public class QuerenActivity extends AppCompatActivity implements View.OnClickLis
 
 	private void queren() {
 		final RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-		StringRequest stringrequest=new StringRequest(Request.Method.POST, "http://192.168.218.2:8080/Book/rentoneServ", new Response.Listener<String>() {
+		StringRequest stringrequest=new StringRequest(Request.Method.POST, "http://123.206.230.120/Book/rentoneServ", new Response.Listener<String>() {
 			@Override
 			public void onResponse(String s) {
 				try {
 					JSONObject jsonObject=new JSONObject(s);
-					Log.e("BBBB",s);
 					int rentLength=jsonObject.getInt("rentLength");
 					int errorNum=jsonObject.getInt("errorNum");
 					if(errorNum==0){

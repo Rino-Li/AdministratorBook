@@ -59,6 +59,7 @@ public class LoginActivity extends Activity {
 								Toast.makeText(LoginActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
 								startActivity(new Intent(LoginActivity.this, MainActivity.class));
 								finish();
+								overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
 							} else if (resultCode == 4) {
 								Toast.makeText(LoginActivity.this, "密码错误，请重新输入！", Toast.LENGTH_SHORT).show();
 							} else if (resultCode == 2) {
