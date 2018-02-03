@@ -43,7 +43,7 @@ public class LoginActivity extends Activity {
 		loginBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				String account=user_account.getText().toString();
+				final String account=user_account.getText().toString();
 				String pwd=user_pwd.getText().toString();
 				//1创建请求队列
 				RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
@@ -58,6 +58,10 @@ public class LoginActivity extends Activity {
 								//getInfor();
 								Toast.makeText(LoginActivity.this,"登录成功",Toast.LENGTH_SHORT).show();
 								startActivity(new Intent(LoginActivity.this, MainActivity.class));
+								SharedPreferences pre=getSharedPreferences("admin",MODE_PRIVATE);
+								SharedPreferences.Editor editor=pre.edit();
+								editor.putString("account",account);
+								editor.commit();
 								finish();
 								overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
 							} else if (resultCode == 4) {

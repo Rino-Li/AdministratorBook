@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.xys.libzxing.zxing.activity.CaptureActivity;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
 	}
 	public void scan2(View view){
 		startActivityForResult(new Intent(MainActivity.this, CaptureActivity.class),2);
+	}
+	public void exit(View view){
+		File file= new File("/data/data/cn.edu.uzz.activity.erweima/shared_prefs","admin.xml");
+		file.delete();
+		System.exit(0);
 	}
 
 	@Override
